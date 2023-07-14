@@ -15,11 +15,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const article = articleData.map((article) => article.get({ plain: true }));
+    const articles = articleData.map((article) => article.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', {
-      article,
+      articles,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
