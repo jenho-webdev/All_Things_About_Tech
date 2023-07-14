@@ -1,28 +1,31 @@
-{{#each blogs as |blog|}}
+{{#each articles as |article|}}
 
-  <div class="row">
+  <div class='row'>
 
-    <div class="container blogBox">
-			<div class="row  justify-content-center headerRow">
-      <div class="col-8">
-        <h2>
-          <a class="blogTitle text-uppercase" href="/blog/{{blog.id}}">{{blog.title}}</a>
-        </h2>
+    <div class='container articleBox'>
+      <div class='row justify-content-center headerRow'>
+        <div class='col-8'>
+          <h2>
+            <a
+              class='articleTitle text-uppercase'
+              href='/article/{{article.id}}'
+            >{{article.name}}</a>
+          </h2>
+        </div>
+
+        <div class='col-4'>
+          <p class='articleCreate text-right'>Created by
+            {{article.user.username}}
+            on
+            {{format_date article.date_created}}
+          </p>
+        </div>
       </div>
-
-      <div class="col-4">
-        <p class="blogCreate text-right">Created by
-          {{blog.user.username}}
-          on
-          {{format_date blog.date_created}}
+      <div class='articleDesc'>
+        <p class='text-center articleDescMain'>
+          {{article.description}}
         </p>
       </div>
-			</div>
-    <div class="blogDesc">
-      <p class="text-center blogDescMain">
-        {{blog.description}}
-      </p>
-    </div>
     </div>
 
   </div>
