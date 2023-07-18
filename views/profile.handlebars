@@ -35,22 +35,30 @@
   {{#if articles.length}}
     <div class='col-md-6 article-list'>
       <h3>Current articles:</h3>
+      <br>
+      <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Article Id:</th>
+          <th scope="col">Article Name:</th>
+          <th scope="col">Delete:</th>
+        </tr>
+      </thead>
+        <tbody>
 
-      {{#each articles as |article|}}
-        <div class='row mb-2'>
-          <div class='col-md-8'>
-            <h4><a href='/article/{{article.id}}'>{{article.name}}</a></h4>
-          </div>
-          <div class='col-md-4'>
-            <button
+          {{#each articles as |article|}}
+          <tr>
+          <th scope="row">{{article.id}}</th>
+          <td>{{article.name}}</td>
+          <td><button
               class='btn btn-sm btn-danger'
               data-id='{{article.id}}'
-            >DELETE</button>
-          </div>
-        </div>
-      {{/each}}
-    </div>
-  {{/if}}
-</div>
+            >DELETE</button></td>
+          </tr>
+            {{/each}}
 
+        </tbody>
+      </table>
+       {{/if}}
+    </div>
 <script src='./js/profile.js'></script>

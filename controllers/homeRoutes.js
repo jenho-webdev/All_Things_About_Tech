@@ -27,6 +27,15 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/', async (req, res) => {
+  try {
+    // Pass serialized data and session flag into template
+    res.render('login');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/article/:id', async (req, res) => {
   try {
     const articleData = await Article.findByPk(req.params.id, {
@@ -77,6 +86,15 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/signup', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+  res.render('signup');
 });
 
 module.exports = router;
