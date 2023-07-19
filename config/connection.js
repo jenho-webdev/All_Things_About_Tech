@@ -8,11 +8,10 @@ if (process.env.JAWSDB_URL) {
 } else {
   sequelize = new Sequelize(
     process.env.DB,
-    process.env.DB_Host,
     process.env.DB_USER,
     process.env.DB_PASSWORD,
     {
-      host: 'us-cdbr-east-06.cleardb.net',
+      host: 'localhost',
       dialect: 'mysql',
       port: 3306,
     }
