@@ -110,13 +110,6 @@ Feel free to modify and adapt this example file to fit your specific project req
 
 This project is licensed under the [![MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/jenho-webdev/All_Things_About_Tech/blob/main/LICENSE)
 
-> For details of the application's licensing details, please visit the License page in the repo [here](https://github.com/jenho-webdev/All_Things_About_Techblob/main/LICENSE)
->
-
-
-
-
-
 
 ## Credits
 
