@@ -19,11 +19,11 @@
         />
       </div>
       <div class='form-group'>
-        <label for='article-desc'>description:</label>
+        <label for='article-cont'>Content:</label>
         <textarea
           class='form-input'
-          id='article-desc'
-          name='article-desc'
+          id='article-cont'
+          name='article-cont'
         ></textarea>
       </div>
       <div class='form-group'>
@@ -49,7 +49,7 @@
           {{#each articles as |article|}}
           <tr>
           <th scope="row">{{article.id}}</th>
-          <td>{{article.name}}</td>
+          <td><h4><a href='/article/{{article.id}}'>{{article.name}}</a></h4></td>
           <td><button
               class='btn btn-sm btn-danger'
               data-id='{{article.id}}'
