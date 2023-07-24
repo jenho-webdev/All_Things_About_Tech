@@ -1,5 +1,5 @@
 # All_Things_About_Tech
-[![Heroku App](https://img.shields.io/badge/Heroku-Deployed-blueviolet?logo=heroku)](https://tunestack-v1-74649ac6d540.herokuapp.com/)
+[![Heroku App](https://img.shields.io/badge/Heroku-Deployed-blueviolet?logo=heroku)](https://all-things-about-tech-826fa0be8980.herokuapp.com/)
 [![Github Repo](https://img.shields.io/badge/GitHub_Repo-Deployed-blue?logo=github)](https://github.com/jenho-webdev/All_Things_About_Tech)
 
 A simple Tech Blog
@@ -49,7 +49,7 @@ cd All_Things_About_Tech
 npm install
 ```
 
-3. Set up the database
+3. Set up the database and .env
 
 Create a MySQL database using the schema.sql under the db folder and create your own .env file using the provided example.
 
@@ -96,20 +96,25 @@ For users:
 ![Home Page](./public/img/homepage_demo.jpg)
 ![Login page](./public/img/login_demo.jpg)
 ![Sign up page](./public/img/signup_demo.jpg)
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
+In the "Installation" section explains how to set up the environment variables using the `.env` file and references the `.env.example` file as a template. It also emphasizes the importance of not committing the `.env` file to version control and includes a note to add it to the `.gitignore` file.
+
+Feel free to modify and adapt this example file to fit your specific project requirements.
+
 ## License
 
-This project is licensed under the [![MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/jenho-webdev/ERM/blob/main/LICENSE)
 
-> For details of the application's licensing details, please visit the License page in the repo [here](https://github.com/jenho-webdev/ERM/blob/main/LICENSE)
->
->
-In the above example, the "Configuration" section explains how to set up the environment variables using the `.env` file and references the `.env.example` file as a template. It also emphasizes the importance of not committing the `.env` file to version control and includes a note to add it to the `.gitignore` file.
+This project is licensed under the [![MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/jenho-webdev/All_Things_About_Tech/blob/main/LICENSE)
 
-Feel free to modify and adapt this example to fit your specific project requirements.
+> For details of the application's licensing details, please visit the License page in the repo [here](https://github.com/jenho-webdev/All_Things_About_Techblob/main/LICENSE)
+>
+
+
+
 
 
 
