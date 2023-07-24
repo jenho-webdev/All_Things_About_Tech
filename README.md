@@ -1,4 +1,6 @@
 # All_Things_About_Tech
+[![Heroku App](https://img.shields.io/badge/Heroku-Deployed-blueviolet?logo=heroku)](https://tunestack-v1-74649ac6d540.herokuapp.com/)
+[![Github Repo](https://img.shields.io/badge/GitHub_Repo-Deployed-blue?logo=github)](https://github.com/jenho-webdev/All_Things_About_Tech)
 
 A simple Tech Blog
 
@@ -88,6 +90,7 @@ For users:
 
 
 ## Demo
+
 
 ![Article page](./public/img/article_page_demo.jpg)
 ![Home Page](./public/img/homepage_demo.jpg)
