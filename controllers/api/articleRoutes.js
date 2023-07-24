@@ -2,8 +2,6 @@ const router = require('express').Router();
 const { Article } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-
-
 router.post('/', withAuth, async (req, res) => {
   try {
     const newArticle = await Article.create({
@@ -12,6 +10,14 @@ router.post('/', withAuth, async (req, res) => {
     });
 
     res.status(200).json(newArticle);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+router.get('/', async (req, res) => {
+  try {
+    const allArticle = await Article.findAll();
+    res.status(200).json(allArticle);
   } catch (err) {
     res.status(400).json(err);
   }
